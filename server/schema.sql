@@ -1,3 +1,4 @@
+DROP DATABASE chat;
 CREATE DATABASE chat;
 
 USE chat;
@@ -22,7 +23,7 @@ CREATE TABLE messages (
   user_id INT NOT NULL,
   room VARCHAR (255) NOT NULL,
   PRIMARY KEY (id),
-  FOREIGN KEY (user_id) REFERENCES users(id),
+  FOREIGN KEY (user_id) REFERENCES users(id)
   -- FOREIGN KEY (room) REFERENCES room(id)
 );
 
