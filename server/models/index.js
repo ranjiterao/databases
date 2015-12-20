@@ -42,7 +42,8 @@ module.exports = {
           throw err;
         } 
         else {
-          callback(results);
+          // console.log(results);
+          callback();
         }
       });
     }
